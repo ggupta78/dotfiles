@@ -52,3 +52,6 @@
 
 [init]
   defaultBranch = master
+[user]
+	email = ggupta78@gmail.com
+	name = Gautam Gupta
