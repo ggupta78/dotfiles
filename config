@@ -1,3 +1,17 @@
+Include ~/.orbstack/ssh/config
+
+#Host main.gitlab.in.here.com
+#  PreferredAuthentications publickey
+#  StrictHostKeyChecking no
+#  IdentityFile ~/.ssh/here_gitlab_ed25519
+
+Host *.ssh.wpengine.net
+  IdentityFile ~/.ssh/wpengine_ed25519
+  IdentitiesOnly yes
+
+Host 178.128.219.52
+  IdentityFile ~/.ssh/id_ed25519
+
 Host *
   UseKeychain yes
   AddKeysToAgent yes

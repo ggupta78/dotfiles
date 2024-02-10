@@ -23,7 +23,9 @@ type -a rbenv > /dev/null && eval "$(rbenv init -)"
 
 # Load pyenv (to manage your Python versions)
 export PYENV_VIRTUALENV_DISABLE_PROMPT=1
-type -a pyenv > /dev/null && eval "$(pyenv init -)" && eval "$(pyenv virtualenv-init -)" && RPROMPT+='[🐍 $(pyenv version-name)]'
+type -a pyenv > /dev/null && eval "$(pyenv init -)" 
+# [Gautam]: removed some pyenv related pieces
+# && eval "$(pyenv virtualenv-init -)" && RPROMPT+='[🐍 $(pyenv version-name)]'
 
 # Load nvm (to manage your node versions)
 export NVM_DIR="$HOME/.nvm"
@@ -70,3 +72,20 @@ export EDITOR=code
 
 # Set ipdb as the default Python debugger
 export PYTHONBREAKPOINT=ipdb.set_trace
+
+# Set MAMP PHP path
+export PATH="/Applications/MAMP/bin/php/php8.2.0/bin:$PATH"
+
+# Add Flutter path
+export PATH="$PATH:/Users/gautam/flutter/bin"
+
+# aliases
+alias c='clear'
+alias fl='cd ~/code/ggupta78/fullstack-challenges'
+alias le='cd ~/code/lewagon/lectures'
+alias li='cd ~/code/lewagon/livecode'
+alias lw='cd ~/code/lewagon'
+alias m='cd ~/code/ggupta78'
+alias k='code .'
+alias s='subl .'
+

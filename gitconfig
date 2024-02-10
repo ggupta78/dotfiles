@@ -51,7 +51,14 @@
   rebase = false
 
 [init]
-  defaultBranch = master
+	defaultBranch = main
 [user]
 	email = ggupta78@gmail.com
 	name = Gautam Gupta
+[url "https://"]
+	insteadOf = git://
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
