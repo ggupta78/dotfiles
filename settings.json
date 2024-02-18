@@ -139,4 +139,5 @@
   "editor.formatOnPaste": true,
   "editor.formatOnSave": true,
   "editor.formatOnType": true,
+  "liveServer.settings.NoBrowser": true,
 }
