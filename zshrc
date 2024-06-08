@@ -77,7 +77,7 @@ export PYTHONBREAKPOINT=ipdb.set_trace
 export PATH="/Applications/MAMP/bin/php/php8.2.0/bin:$PATH"
 
 # Add Flutter path
-export PATH="$PATH:/Users/gautam/flutter/bin"
+# export PATH="$PATH:/Users/gautam/flutter/bin"
 
 # aliases
 alias c='clear'
@@ -88,4 +88,8 @@ alias lw='cd ~/code/lewagon'
 alias m='cd ~/code/ggupta78'
 alias k='code .'
 alias s='subl .'
+alias so='cd ~/code/lewagon/solutions'
+alias bi='bundle install'
+alias rr='rails routes'
+alias rs='rails server'
 

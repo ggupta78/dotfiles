@@ -18,7 +18,8 @@
   "editor.snippetSuggestions": "top",
   "editor.tabSize": 2,
   "emmet.includeLanguages": {
-    "erb": "html"
+    "erb": "html",
+    "javascript": "javascriptreact"
   },
   "emmet.showSuggestionsAsSnippets": true,
   "emmet.triggerExpansionOnTab": true,
@@ -82,7 +83,6 @@
   "editor.wordWrap": "on",
   "git.openRepositoryInParentFolders": "always",
   "liveServer.settings.donotShowInfoMsg": true,
-  "workbench.colorTheme": "GitHub Dark",
   "git.enableSmartCommit": true,
   "svelte.enable-ts-plugin": true,
   "git.confirmSync": false,
@@ -95,7 +95,7 @@
       "savePathReplacementPairs": null
     }
   ],
-  "editor.fontFamily": "'MesloLGSDZ Nerd Font Mono', 'FiraCode Nerd Font', Menlo, Monaco, 'InconsolataGo Nerd Font', monospace",
+  "editor.fontFamily": "'MesloLGSDZ Nerd Font Mono', 'FiraCode Nerd Font', Menlo, Monaco, 'InconsolataGo Nerd Font', 'IBM Plex Mono', monospace",
   "github.copilot.enable": {
     "*": false,
     "plaintext": false,
@@ -107,8 +107,18 @@
   },
   "window.zoomLevel": 1,
   "window.menuBarVisibility": "toggle",
-  "rubyLsp.rubyVersionManager": "rbenv",
-  "[ruby]": {},
+  "rubyLsp.rubyVersionManager": {
+    "identifier": "rbenv"
+  },
+  "[ruby]": {
+    "editor.defaultFormatter": "Shopify.ruby-lsp", // Use the Ruby LSP as the default formatter
+    "editor.formatOnPaste": true, // Enable formatting while pasting
+    "editor.formatOnSave": true, // Format files automatically when saving
+    "editor.tabSize": 2, // Use 2 spaces for indentation
+    "editor.insertSpaces": true, // Use spaces and not tabs for indentantion
+    "editor.semanticHighlighting.enabled": true, // Enable semantic highlighting
+    "editor.formatOnType": true, // Enable formatting while typing
+  },
   "files.associations": {
     "*.rb": "ruby"
   },
@@ -140,4 +150,15 @@
   "editor.formatOnSave": true,
   "editor.formatOnType": true,
   "liveServer.settings.NoBrowser": true,
+  "[yaml]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": false,
+    "editor.insertSpaces": true,
+    "editor.tabSize": 2,
+    "editor.autoIndent": "advanced",
+    "diffEditor.ignoreTrimWhitespace": false
+  },
+  "prettier.quoteProps": "preserve",
+  "github.copilot.editor.enableAutoCompletions": true,
+  "workbench.colorTheme": "Solarized Light",
 }
